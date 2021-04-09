@@ -7,12 +7,11 @@
 
 
 
-### 01. Azure VM 생성
-### 02. Azure SQL Database 생성
-### 03. SERVICE ENDPOINT
-### 04. PRIVATE ENDPINT
-### 05. READ_ONLY REPLICA
-### 06. Elastic Query
+### 01. Azure SQL CeateResource
+### 02. Azure SQL Fiewalls Networks
+### 03. Azure SQL High availability
+### 04. Azure SQL Limit
+### 05. Azure SQL Monitoring
 
 
 
