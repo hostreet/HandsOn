@@ -77,6 +77,7 @@ az vm open-port --port 3389 --resource-group $resourceGroup --name $vmName
 #### HandsOn 진행을 위한 Tools 설치파일 다운로드 및 설치
 #### Client Tool(SSMS) 설치
 자동 설치
+
 생성된 VM 접속 후 Powershell
 
 ```powershell
