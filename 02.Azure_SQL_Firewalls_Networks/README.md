@@ -17,8 +17,8 @@ Azure Portal,Azure CLI,Azure Powershell 및 SSMS 등 데이터베이스에서 �
 4. 위 저장을 눌러 변경사항을 업데이트합니다.
 
 #### [SSMS] 서버 수준 IP 방화벽 규칙
-서버에서 관리되는 모든 데이터베이스에 접근을 허용 합니다  
-Azure Portal,Azure CLI,Azure Powershell 및 SSMS 등 데이터베이스에서 허용할 수 있습니다  
+서버에서 관리되는 모든 데이터베이스에 접근을 허용 합니다.
+Azure Portal,Azure CLI,Azure Powershell 및 SSMS 등 데이터베이스에서 허용할 수 있습니다.
 
 SSMS에서 실행 (방화벽 추가)  
 ```sql
@@ -41,8 +41,8 @@ EXEC sp_delete_firewall_rule N'allowmyip'
 
 #### 데이터베이스 수준 IP 방화벽 규칙
 #### [SSMS] 데이터베이스 수준 IP 방화벽 규칙
-특정 데이터베이스에 접속을 허용 합니다
-Azure SQL 에서 SSMS로 허용 합니다
+특정 데이터베이스에 접속을 허용 합니다.
+Azure SQL 에서 SSMS로 허용 합니다.
 
 SSMS에서 실행 (방화벽 추가)  
 ```sql
@@ -64,11 +64,11 @@ EXEC sp_delete_database_firewall_rule N'allowmyip'
 ```
 
 ### 02. 방화벽 및 Service Endpoint 추가
-기존 생성한 VM 에서 Azure SQL로 접속하기 위해서는 VM에 속한 VNet - Subnet에서 Service endpoint를 추가한 뒤 해당 서브넷을 허용 하여야 합니다  
-Subnet에서 Service endpoint 추가 시 해당 VNet이 잠시동안 가동 중지될 수 있으니 주의하여야 합니다  
+기존 생성한 VM 에서 Azure SQL로 접속하기 위해서는 VM에 속한 VNet - Subnet에서 Service endpoint를 추가한 뒤 해당 서브넷을 허용 하여야 합니다.
+Subnet에서 Service endpoint 추가 시 해당 VNet이 잠시동안 가동 중지될 수 있으니 주의하여야 합니다.
   
 만일 당장 VNet이 잠시 중단 되는 것을 원하지 않는다면 IgnoreMissingVNetServiceEndpoint 플래그를 활성화하여 
-Service endpoint를 무시하여 VNet이 가동 중지 되는 것을 방지한 후 가능한 시점에 Service Endpoint를 추가할 수 있습니다  
+Service endpoint를 무시하여 VNet이 가동 중지 되는 것을 방지한 후 가능한 시점에 Service Endpoint를 추가할 수 있습니다.
 
 이미지 넣기!!
 
