@@ -21,6 +21,7 @@ SELECT DATABASEPROPERTYEX(DB_NAME(), 'Updateability')
 ### 02. Failover Group
 Geo-Replication에서는 slave node를 master로 fail-over 하려면 수동으로 진행 가능 합니다.
 지역간의 fail-over를 자동으로 관리하기 위해서는 Failover Group을 사용하여야 합니다.
+
 ![azsqlfog](https://docs.microsoft.com/ko-kr/azure/azure-sql/database/media/auto-failover-group-overview/auto-failover-group.png)
 
 구성을 위해서 아래 Azure CLI로 Replication이 진행된 primary (master), seconday (slave) 서버를 Failover Group에 추가 합니다.
@@ -31,10 +32,14 @@ az sql failover-group create --name $fogName --partner-server $repServerName  --
 ```
 
 FOG (Failover group)을 사용하면 각 SQL Server의 endpoint를 사용하지 않아도 리스너를 통하여 primary와 secondary의 endpoint를 사용할 수 있습니다.
+
 ![fogendpoint](https://azmyhanson.blob.core.windows.net/azcon/01_fogendpoint.jpg)
+
 ## Business Critical or Premium
 Azure SQL Database Business critical 혹은 Premium tier 에서는 별도의 비용 없이 Zone Redundant (지원하는 지역에 한함), Failover Group 및 Read-Only Replica를 사용할 수 있습니다.
+
 ![sqlbc](https://docs.microsoft.com/en-us/azure/azure-sql/database/media/read-scale-out/business-critical-service-tier-read-scale-out.png)
+
 Read-Only Replica를 테스트 하기 위해 SSMS를 통하여 기본 endpoint로 접속하여 아래 쿼리를 확인 합니다.
 ```sql
 -- 현재 접속이 읽기 전용 복제본인지 확인
