@@ -85,5 +85,6 @@ VPN 또는 Express Route와 같은 연결로 Azure Virtual Network를 통해 들
 Service Endpoint
 - VNET에 PaaS resource 접근에 대한 권한을 위임
 - PIP
+
 Private Link
 - Service에 대한 트래픽이 항상 VNET내에 있음
