@@ -1,11 +1,5 @@
 
-
-
-
-
-
-
-## 02. Azure SQL Database 생성 (General purpose - 2vCore)
+## 01. Azure SQL Database 생성 (General purpose - 2vCore)
 
 portal에서 [sql database]를 클릭하여 생성버튼을 누른 뒤 아래와 같이 입력합니다.
 
@@ -41,7 +35,7 @@ az sql db create -g $resourceGroup -s $serverName -n $dbName --collation $collat
 ![azsqlgp](https://docs.microsoft.com/ko-kr/azure/azure-sql/database/media/high-availability-sla/general-purpose-service-tier.png)
 
 
-## 03. Azure SQL Database 생성 (Business critical - 2vCore)
+## 02. Azure SQL Database 생성 (Business critical - 2vCore)
 
 위에서 생성한 General Purpose와 동일하게 진행하되 6번 내용의 SKU를 아래와 같이 Business Critical로 변경하여 생성해 줍니다.
 (sql server의 경우 의에서 GP로 리소스가 생성되면 같은 server하위에 database를 생성하시거나 별도의 server로 생성하셔도 무방합니다.)
@@ -63,7 +57,7 @@ az sql db create -g $resourceGroup -s $bcServerName -n $bcDbName --collation $co
 
 
 
-## 04. Check
+## 03. Check
 위의 과정대로 모두 생성한 뒤에 Azure portal에서 sql server를 쳐보면 아래와 같이 sql server 하위에 GP(General Purpose), BC(Business Critical) 2개의 database가 생성되어 있습니다.
 
 
