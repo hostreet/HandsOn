@@ -74,8 +74,7 @@ Service endpoint를 무시하여 VNet이 가동 중지 되는 것을 방지한 �
 
 ### 03. Private Link for Azure SQL Database
 서비스 엔드 포인트에는 몇 가지 제한이나 단점이 있습니다.
-서비스 엔드 포인트에 대한 트래픽이 여전히 가상 네트워크 외부로 나가며 
-Azure PaaS 리소스가 여전히 해당 공용 주소에서 액세스되고 있습니다.
+서비스 엔드 포인트에 대한 트래픽이 여전히 가상 네트워크 외부로 나가며 Azure PaaS 리소스가 여전히 해당 공용 주소에서 액세스되고 있습니다.
 VPN 또는 Express Route와 같은 연결로 Azure Virtual Network를 통해 들어오는 트래픽에만 사용할 수 있습니다.  
 온 프레미스 리소스에 대한 액세스를 허용하려면 해당 퍼블릭 IP도 허용해야합니다.  
 
