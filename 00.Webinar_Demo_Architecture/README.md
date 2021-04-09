@@ -2,7 +2,7 @@
 ## Webinar Demo Architecture
 
 
-![webinar_architecture2](https://user-images.githubusercontent.com/82139935/114114273-81749500-991b-11eb-9c82-5535f7b73dd4.PNG)
+![webinar_architecture3](https://user-images.githubusercontent.com/82139935/114117694-3742e200-9922-11eb-9f4b-e1be3050e6e0.PNG)
 
 
 
