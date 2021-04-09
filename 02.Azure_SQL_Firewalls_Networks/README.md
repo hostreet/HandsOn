@@ -70,7 +70,8 @@ Subnet에서 Service endpoint 추가 시 해당 VNet이 잠시동안 가동 중�
 만일 당장 VNet이 잠시 중단 되는 것을 원하지 않는다면 IgnoreMissingVNetServiceEndpoint 플래그를 활성화하여 
 Service endpoint를 무시하여 VNet이 가동 중지 되는 것을 방지한 후 가능한 시점에 Service Endpoint를 추가할 수 있습니다.
 
-이미지 넣기!!
+![servcie_endpoint](https://user-images.githubusercontent.com/82139935/114144161-fe216680-994f-11eb-9c58-84aea9786bb2.png)
+
 
 ### 03. Private Link for Azure SQL Database
 서비스 엔드 포인트에는 몇 가지 제한이나 단점이 있습니다.
@@ -78,7 +79,7 @@ Service endpoint를 무시하여 VNet이 가동 중지 되는 것을 방지한 �
 VPN 또는 Express Route와 같은 연결로 Azure Virtual Network를 통해 들어오는 트래픽에만 사용할 수 있습니다.  
 온 프레미스 리소스에 대한 액세스를 허용하려면 해당 퍼블릭 IP도 허용해야합니다.  
 
-이미지 넣기!!
+![private_endpoint](https://user-images.githubusercontent.com/82139935/114144167-ff529380-994f-11eb-80fc-27ca7de27169.png)
 
 
 ### 04. Service Endpoint vs Private Link
