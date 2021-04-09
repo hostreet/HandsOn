@@ -3,7 +3,7 @@
 
 portal에서 [sql database]를 클릭하여 생성버튼을 누른 뒤 아래와 같이 입력합니다.
 
-<img src = "../images/mssql_image02.PNG" width="60%">
+![sqldatabase_create](https://user-images.githubusercontent.com/82139935/114138879-3a04fd80-9949-11eb-9476-8c1f506c655f.PNG)
 
 1. resource group : 이전 VM을 생성할 때 사용했던 리소스 그룹을 선택합니다.
 2. database name : 신규 생성될 sql server 하위의 데이터베이스 이름(sql server 내에서만 고유하면 됨)을 기입합니다.
@@ -12,7 +12,7 @@ portal에서 [sql database]를 클릭하여 생성버튼을 누른 뒤 아래와
 5. 접속할 id/pw를 지정해줍니다.
 6. 서버 생성 후 데이터 베이스 구성을 클릭하게되면 서비스에 알맞은 SKU를 선택할 수 있습니다.
 
-<img src = "../images/mssql_image03.PNG" width="60%">
+![sqldatabase_sku](https://user-images.githubusercontent.com/82139935/114138882-3b362a80-9949-11eb-9f01-06b356950130.PNG)
 
 7. 검토 + 만들기를 눌러 생성을 완료합니다.
 
@@ -40,7 +40,7 @@ az sql db create -g $resourceGroup -s $serverName -n $dbName --collation $collat
 위에서 생성한 General Purpose와 동일하게 진행하되 6번 내용의 SKU를 아래와 같이 Business Critical로 변경하여 생성해 줍니다.
 (sql server의 경우 의에서 GP로 리소스가 생성되면 같은 server하위에 database를 생성하시거나 별도의 server로 생성하셔도 무방합니다.)
 
-<img src = "../images/mssql_image04.PNG" width="60%">
+![sqldatabase_sku2](https://user-images.githubusercontent.com/82139935/114138883-3bcec100-9949-11eb-9f0f-6e1751ba3d39.PNG)
 
 ### cli 통해서 진행 할 경우
 
@@ -60,4 +60,4 @@ az sql db create -g $resourceGroup -s $bcServerName -n $bcDbName --collation $co
 ### 03. Check
 위의 과정대로 모두 생성한 뒤에 Azure portal에서 sql server를 쳐보면 아래와 같이 sql server 하위에 GP(General Purpose), BC(Business Critical) 2개의 database가 생성되어 있습니다.
 
-<img src = "../images/mssql_image05.PNG" width="60%">
+
