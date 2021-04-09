@@ -1,5 +1,5 @@
 
-## Webinar Demo Architecture
+## Demo Architecture
 
 
 ![webinar_architecture3](https://user-images.githubusercontent.com/82139935/114117694-3742e200-9922-11eb-9f4b-e1be3050e6e0.PNG)
