@@ -36,7 +36,7 @@ az account show
 
 ## Azure Virtual Machine 생성
 
-이미지!!
+![vm_create](https://user-images.githubusercontent.com/82139935/114143201-cf56c080-994e-11eb-9d87-520151b1a21e.PNG)
 
 
 생성된 vm resource를 클릭해보면 공용 IP 주소라고 되어있는 부분을 통해 원격접속 합니다.
