@@ -34,7 +34,7 @@ az account set --subscription "{your subscription}"
 az account show
 ```
 
-## Azure Virtual Machine 생성
+#### Azure Virtual Machine 생성
 
 ![vm_create](https://user-images.githubusercontent.com/82139935/114143201-cf56c080-994e-11eb-9d87-520151b1a21e.PNG)
 
