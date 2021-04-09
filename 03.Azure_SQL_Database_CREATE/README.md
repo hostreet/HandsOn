@@ -1,2 +1,2 @@
 
-### 02. Azure SQL Database 생성
+### 03. Azure SQL Database 생성
