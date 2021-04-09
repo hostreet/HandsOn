@@ -12,7 +12,7 @@
 ### 03. Azure SQL High availability
 ### 04. Azure SQL Limit
 ### 05. Azure SQL Monitoring
-
+##              
 
 
 
@@ -33,9 +33,50 @@ az login
 az account set --subscription "{your subscription}"
 az account show
 ```
+
+## Azure Virtual Machine 생성
+
+이미지!!
+
+```powershell
+# Parameters 임의로 구성되었으며 수정 가능
+# 파라미터 앞에 *이 붙은 항목은 필수 변경
+$location="koreacentral"
+$resourceGroup="rg-adstest"
+$vnetName="vnet-adstest"
+$subnetName="subnet-adstest"
+$publicIPName="pip-adstestvm"
+$nsgName="nsg-adstest"
+$nicName="nic-adstest"
+$vmName="vm-adstest"
+$vmSize="Standard_D4s_v3"
+# 계정 정보 입력
+$AdminUserName="*username"
+$AdminPassword="*password"
+# Create a resource group.
+az group create --name $resourceGroup --location $location
+# Create a virtual network.
+az network vnet create --resource-group $resourceGroup --name $vnetName --subnet-name $subnetName
+# Create a public IP address.
+az network public-ip create --resource-group $resourceGroup --name $publicIPName
+# Create a network security group.
+az network nsg create --resource-group $resourceGroup --name $nsgName
+# Create a virtual network card and associate with public IP address and NSG.
+az network nic create --resource-group $resourceGroup --name $nicName `
+--vnet-name $vnetName --subnet $subnetName --network-security-group $nsgName --public-ip-address $publicIPName
+# Create a virtual machine. 
+az vm create --resource-group $resourceGroup --name $vmName --location $location --nics $nicName --image win2016datacenter `
+--admin-username $AdminUserName --admin-password $AdminPassword --size $vmSize
+# Open port 3389 to allow RDP traffic to host.
+az vm open-port --port 3389 --resource-group $resourceGroup --name $vmName
+```
+
+생성된 vm resource를 클릭해보면 공용 IP 주소라고 되어있는 부분을 통해 원격접속 합니다.
+
+
 #### HandsOn 진행을 위한 Tools 설치파일 다운로드 및 설치
 #### Client Tool(SSMS) 설치
-Powershell 자동 설치
+VM 접속 후 Powershell 자동 설치
 
 ```powershell
 # SQL Server Management Studio 설치
