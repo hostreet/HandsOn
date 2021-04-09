@@ -42,6 +42,6 @@ Read-Only로 접속하기 위해 Connection String에 ApplicationIntent=ReadOnly
 SSMS에서 Connection String을 추가하기 위해서는 옵션을 클릭 후 추가 연결 매개변수에 추가합니다
 
 ![ssms00](https://azmyhanson.blob.core.windows.net/azcon/00_ssms_connection.jpg)
-![ssms00](https://azmyhanson.blob.core.windows.net/azcon/00_ssms_connection.jpg)
+
 
 
