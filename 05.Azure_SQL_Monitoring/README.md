@@ -18,7 +18,6 @@ Azure Portal에서 확인할 수 있습니다.
 
 ```
 1. log analytics를 검색한 뒤
-2. Add를 클릭
 ```
 
 ![log_analytics](https://user-images.githubusercontent.com/82139935/114634780-40ef8f80-9cfe-11eb-9af3-35fde2c36517.PNG)
@@ -32,7 +31,7 @@ region : Korea Central
 # Review + Create 누른 뒤 리소스 생성버튼 클릭.
 ```
 ### 02. Azure SQL Server Audit & Database Audit 설정
-![audit](https://user-images.githubusercontent.com/82139935/114634773-3e8d3580-9cfe-11eb-8822-c241cf625471.PNG)
+![audit_db](https://user-images.githubusercontent.com/82139935/114634776-3fbe6280-9cfe-11eb-84e6-e95c741d7a94.PNG)
 
 ```
 이전에 생성해둔 SQL Server(Database 아님)를 클릭한 뒤
@@ -40,8 +39,8 @@ region : Korea Central
 2. Auditing Off -> On으로 변경
 3. Log Analytics 선택한 뒤 앞서 생성한 Log Analytics 를 선택 후 저장.
 ```
+![audit](https://user-images.githubusercontent.com/82139935/114634773-3e8d3580-9cfe-11eb-8822-c241cf625471.PNG)
 
-![audit_db](https://user-images.githubusercontent.com/82139935/114634776-3fbe6280-9cfe-11eb-84e6-e95c741d7a94.PNG)
 
 ```
 이번엔 SSQL Database에 대한 Audit 설정을 할 차례 방금전 SQL Server 하위의 Database 중 하나를 클릭
