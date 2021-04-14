@@ -34,7 +34,7 @@ region : Korea Central
 ```
 ### 02. Azure SQL Server Audit & Database Audit 설정
 
-![audit](https://user-images.githubusercontent.com/82139935/114634773-3e8d3580-9cfe-11eb-8822-c241cf625471.PNG)
+![audit](https://user-images.githubusercontent.com/82139935/114635478-c758a100-9cff-11eb-8f16-89d6baac2d03.PNG)
 
 
 ```
