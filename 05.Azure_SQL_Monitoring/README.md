@@ -17,10 +17,10 @@ Azure Portal에서 확인할 수 있습니다.
 <img src = "./images/loganalytics01.png" width="60%">
 
 ```
-1. log analytics를 검색한 뒤
+1. log analytics 작업영역 만들기 클릭.
 ```
 
-![log_analytics](https://user-images.githubusercontent.com/82139935/114634780-40ef8f80-9cfe-11eb-9af3-35fde2c36517.PNG)
+![log_analytics](https://user-images.githubusercontent.com/82139935/114635588-fcfd8a00-9cff-11eb-8877-b2f3f4c89c70.PNG)
 
 ![log_analytics2](https://user-images.githubusercontent.com/82139935/114634781-41882600-9cfe-11eb-8352-c024c186d7db.PNG)
 
