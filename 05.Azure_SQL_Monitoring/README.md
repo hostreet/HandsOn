@@ -20,7 +20,7 @@ Azure Portal에서 확인할 수 있습니다.
 1. log analytics 작업영역 만들기 클릭.
 ```
 
-![log_analytics](https://user-images.githubusercontent.com/82139935/114635588-fcfd8a00-9cff-11eb-8877-b2f3f4c89c70.PNG)
+![log_analytics](https://user-images.githubusercontent.com/82139935/114635693-3635fa00-9d00-11eb-9f05-6d96bd19c197.PNG)
 
 ![log_analytics2](https://user-images.githubusercontent.com/82139935/114634781-41882600-9cfe-11eb-8352-c024c186d7db.PNG)
 
