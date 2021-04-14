@@ -54,6 +54,9 @@ region : Korea Central
 ### 03. Log Analytics에 적재된 SQL Audit Log 보기
 
 
+![audit_log_view](https://user-images.githubusercontent.com/82139935/114636432-fd972000-9d01-11eb-872a-f6eedd908304.PNG)
+
+
 ```
 1. 방금설정한 sql database에서 View audit logs 클릭
 2. Log Analytics 선택
